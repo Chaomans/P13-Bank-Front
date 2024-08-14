@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  padding: 2rem 0 1.5rem;
+  background-color: #fff;
+  height: $footer-height;
+  position: absolute;
+  bottom: 0;
+  color: $blue;
+
+  .footerText {
+    width: fit-content;
+    margin: auto;
+  }
+}

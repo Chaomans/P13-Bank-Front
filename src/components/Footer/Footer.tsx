@@ -1,9 +1,11 @@
+import styles from "./Footer.module.scss";
+
 const Footer = () => {
-    return (
-        <div className="Footer">
-            <p>Copyright 2020 Argent Bank</p>
-        </div>
-    );
+  return (
+    <div className={styles.footer}>
+      <p className={styles.footerText}>Copyright 2020 Argent Bank</p>
+    </div>
+  );
 };
 
 export default Footer;

@@ -1,25 +1,24 @@
+import { Feature } from "../../utils/types";
+import styles from "./FeatureItem.module.scss";
+
 type FeatureItemProps = {
-    feature: string;
-    imgPath: string;
-    title: string;
-    description: string;
+  feature: Feature;
 };
 
-const FeatureItem = ({
-    feature,
-    imgPath,
-    title,
-    description,
-}: FeatureItemProps) => {
-    return (
-        <div className="featureItem">
-            <div className="imgDiv">
-                <img src={imgPath} alt={`${feature} icon`} />
-            </div>
-            <p className="title">{title}</p>
-            <p className="desc">{description}</p>
-        </div>
-    );
+const FeatureItem = ({ feature }: FeatureItemProps) => {
+  return (
+    <section className={styles.featureItem}>
+      <div className={styles.featureIconDiv}>
+        <img
+          src={feature.imgPath}
+          alt={`${feature} icon`}
+          className={styles.featureIcon}
+        />
+      </div>
+      <h3 className={styles.title}>{feature.title}</h3>
+      <p className={styles.desc}>{feature.text}</p>
+    </section>
+  );
 };
 
 export default FeatureItem;

@@ -4,6 +4,7 @@
   align-items: center;
   padding: 5px 20px;
   background-color: #fff;
+  height: $header-height;
 
   .mainNavLogo {
     display: flex;
@@ -29,6 +30,15 @@
       display: flex;
       align-items: center;
       gap: 5px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: inherit;
+      }
 
       .userCircle {
         max-width: 100%;
@@ -40,6 +50,15 @@
       display: flex;
       align-items: center;
       gap: 5px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: inherit;
+      }
 
       .logoutIcon {
         max-width: 100%;

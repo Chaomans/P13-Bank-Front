@@ -17,14 +17,14 @@ const Header = ({ isConnected = false }: HeaderProps) => {
         <h1 className={styles.srOnly}>Argent Bank</h1>
       </NavLink>
       <div className={styles.mainNavUser}>
-        <div className={styles.user}>
+        <NavLink className={styles.user} to={"/sign-in"}>
           <img
             src="/assets/user-circle.svg"
             alt="user icon"
             className={styles.userCircle}
           />
           <p>{isConnected ? " User name" : "Sign In"}</p>
-        </div>
+        </NavLink>
 
         {isConnected && (
           <div className={styles.logout}>
