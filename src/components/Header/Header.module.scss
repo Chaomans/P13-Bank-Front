@@ -26,11 +26,13 @@
     margin-right: 0.5rem;
     @include bold-blue;
     gap: 10px;
+
     .user {
       display: flex;
       align-items: center;
       gap: 5px;
       text-decoration: none;
+      @include bold-blue;
 
       &:hover {
         text-decoration: underline;
